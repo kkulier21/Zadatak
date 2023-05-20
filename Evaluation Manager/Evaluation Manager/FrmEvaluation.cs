@@ -53,7 +53,7 @@ namespace Evaluation_Manager
         private void cboActivities_SelectedIndexChanged(object sender, EventArgs e)
         {
             var evaluation =
- EvaluationRepository.GetEvaluation(SelectedStudent, currentActivity);
+             EvaluationRepository.GetEvaluation(SelectedStudent, currentActivity);
             if (evaluation != null)
             {
                 txtTeacher.Text = evaluation.Evaluator.ToString();
